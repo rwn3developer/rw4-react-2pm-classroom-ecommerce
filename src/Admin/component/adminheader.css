@@ -1,0 +1,16 @@
+.admin-nav ul{
+    padding: 0px;
+    margin: 0px;
+}
+.admin-nav ul li{
+    list-style: none;
+    margin-top: 20px;
+}
+.admin-nav ul li a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+.admin-nav ul  li  :hover{
+    background-color: rgb(53, 53, 54);
+}

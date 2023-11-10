@@ -1,0 +1,257 @@
+{
+  "users": [
+    {
+      "name": "dharmi",
+      "email": "dharmi@gmail.com",
+      "password": "12345",
+      "id": 1
+    },
+    {
+      "name": "bhumi",
+      "email": "bhumi@gmail.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "hensi",
+      "email": "hensi@gmail.com",
+      "password": "12345",
+      "id": 3
+    },
+    {
+      "name": "krish",
+      "email": "krish@gmail.com",
+      "password": "12345",
+      "id": 4
+    },
+    {
+      "name": "smit",
+      "email": "smit@gmail.com",
+      "password": "12345",
+      "id": 5
+    }
+  ],
+  "category": [
+    {
+      "category_name": "mobile",
+      "id": 1
+    },
+    {
+      "category_name": "eletronics",
+      "id": 2
+    },
+    {
+      "category_name": "cloths",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "Trimmers",
+      "price": 339,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/trimmer/k/7/v/1-7-mm-bt1233-18-stainless-steel-cordless-philips-original-imagzgwgrdtxhgbu.jpeg?q=70",
+      "category": "eletronics",
+      "marketstatus": "latest",
+      "status": "instock",
+      "id": 1
+    },
+    {
+      "name": "keyboard",
+      "price": 229,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/keyboard/desktop-keyboard/3/c/1/150-hp-original-imaghydff9ttwzex.jpeg?q=70",
+      "status": "instock",
+      "category": "eletronics",
+      "marketstatus": "best",
+      "id": 2
+    },
+    {
+      "name": "printer",
+      "price": 10190,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/k4a7c7k0/printer/y/j/z/canon-e3370-original-imafn2wyyxjjvzd6.jpeg?q=70",
+      "status": "instock",
+      "category": "eletronics",
+      "marketstatus": "trending",
+      "id": 3
+    },
+    {
+      "name": "pendrive",
+      "price": 296,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/jwfa5jk0/pendrive/pendrive/z/f/p/sandisk-sdcz50-128g-i35-original-imafh3xkevktvq4w.jpeg?q=70",
+      "status": "instock",
+      "category": "eletronics",
+      "marketstatus": "best",
+      "id": 4
+    },
+    {
+      "name": "iphone",
+      "price": 61999,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70",
+      "status": "instock",
+      "category": "mobile",
+      "marketstatus": "latest",
+      "id": 5
+    },
+    {
+      "name": "mi",
+      "price": 11987,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/e/y/b/-original-imageftfzx8gfkys.jpeg?q=70",
+      "status": "instock",
+      "category": "mobile",
+      "marketstatus": "best",
+      "id": 6
+    },
+    {
+      "name": "samsung",
+      "price": 11347,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/t/h/galaxy-f54-5g-sm-e546bzshins-samsung-original-imagq79f82pfyzvh.jpeg?q=70",
+      "status": "instock",
+      "category": "mobile",
+      "marketstatus": "trending",
+      "id": 7
+    },
+    {
+      "name": "vivo",
+      "price": 14999,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/4/h/e/-original-imagzjhwmsamexfk.jpeg?q=70",
+      "status": "instock",
+      "category": "mobile",
+      "marketstatus": "best",
+      "id": 8
+    },
+    {
+      "name": "Lenovo Monitor",
+      "price": 7499,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/ko8xtow0/monitor/t/a/y/d24-20-66aekac1in-lenovo-original-imag2qwzazcdmqtb.jpeg?q=70",
+      "status": "instock",
+      "category": "eletronics",
+      "marketstatus": "upcomming",
+      "id": 9
+    },
+    {
+      "name": "realme",
+      "price": 8999,
+      "qty": 1,
+      "desc": "",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/b/i/x/-original-imagt4qptrkzwmxa.jpeg?q=70",
+      "status": "instock",
+      "category": "mobile",
+      "marketstatus": "best",
+      "id": 10
+    },
+    {
+      "name": "Boys Full Sleeve Graphic Print Sweatshirt",
+      "price": "199",
+      "qty": "1",
+      "desc": "nice tshirt sastu chhe anathi sastu kyay no male",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/sweatshirt/i/t/o/3-4-years-s-wt01-wine-british-mars-infiniti-original-imagtyv3ks9u72s9.jpeg?q=70",
+      "category": "cloths",
+      "likes": "",
+      "likedBy": [],
+      "dislikedBy": [],
+      "marketstatus": "trending",
+      "status": "instock",
+      "id": 11
+    },
+    {
+      "name": "Honor",
+      "price": "31999",
+      "qty": "1",
+      "desc": "ladis mobile chhe aa sagai thai to aa lai levo",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/b/5/k/90-diamond-silver-8gb-256gb-rea-nx9-honor-original-imagtscvyr8gju44.jpeg?q=70",
+      "category": "mobile",
+      "likes": 0,
+      "likedBy": [],
+      "dislikedBy": [],
+      "marketstatus": "upcomming",
+      "status": "instock",
+      "id": 12
+    },
+    {
+      "name": "realme C53",
+      "price": "10499",
+      "qty": "1",
+      "desc": "Enjoy a seamless experience with multitude of benefits on this realme C53 smartphone. Take stunning photoshoots with the 108 MP camera and take amazing photos in pixel mode and 3X zoom modes. Sporting a slim 7.99 mm display, you can have an amazing visual interaction with your phone with 90 Hz refresh rates. The powerful octa-core chipset available with this phone enhances your performance and productivity. Supported with up to 12 GB of Dynamic RAM and 128 GB of ROM, your phone responds superfast and has massive storage capacity. Powered with a 5000 mAh battery and 18 W fast charger, this phone can be carried anywhere and can be used all day. You can stay updated with the number of steps, daily walking distance etc., with this mini capsule.",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/5/q/6/-original-imags487ftf3g2s7.jpeg?q=70",
+      "category": "mobile",
+      "marketstatus": "latest",
+      "status": "instock",
+      "id": 13
+    }
+  ],
+  "slider": [
+    {
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/5ee3a65cfc042044.jpg?q=20",
+      "id": 1
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/b91142ce378acb54.jpg?q=20",
+      "id": 2
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/2dc3aafcc8afbaf8.jpg?q=20",
+      "id": 3
+    }
+  ],
+  "carts": [
+    {
+      "name": "Trimmers",
+      "price": 339,
+      "qty": 1,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/trimmer/k/7/v/1-7-mm-bt1233-18-stainless-steel-cordless-philips-original-imagzgwgrdtxhgbu.jpeg?q=70",
+      "category": "eletronics",
+      "productId": 1,
+      "userId": 2,
+      "id": 1
+    }
+  ],
+  "orders": [
+    {
+      "name": "Trimmers",
+      "price": 339,
+      "qty": 1,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/trimmer/k/7/v/1-7-mm-bt1233-18-stainless-steel-cordless-philips-original-imagzgwgrdtxhgbu.jpeg?q=70",
+      "category": "eletronics",
+      "productId": 1,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "name": "keyboard",
+      "price": 229,
+      "qty": 1,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/keyboard/desktop-keyboard/3/c/1/150-hp-original-imaghydff9ttwzex.jpeg?q=70",
+      "category": "eletronics",
+      "productId": 2,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "name": "printer",
+      "price": 10190,
+      "qty": 1,
+      "image": "https://rukminim2.flixcart.com/image/416/416/k4a7c7k0/printer/y/j/z/canon-e3370-original-imafn2wyyxjjvzd6.jpeg?q=70",
+      "category": "eletronics",
+      "productId": 3,
+      "userId": 2,
+      "id": 3
+    }
+  ]
+}
