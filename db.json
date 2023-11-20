@@ -4,31 +4,57 @@
       "name": "dharmi",
       "email": "dharmi@gmail.com",
       "password": "12345",
+      "contact": 9876512345,
+      "role": "user",
       "id": 1
     },
     {
       "name": "bhumi",
       "email": "bhumi@gmail.com",
       "password": "12345",
+      "contact": 9876543212,
+      "role": "user",
       "id": 2
     },
     {
       "name": "hensi",
       "email": "hensi@gmail.com",
       "password": "12345",
+      "contact": 1234567890,
+      "role": "user",
       "id": 3
     },
     {
       "name": "krish",
       "email": "krish@gmail.com",
       "password": "12345",
+      "contact": 3344556677,
+      "role": "user",
       "id": 4
     },
     {
       "name": "smit",
       "email": "smit@gmail.com",
       "password": "12345",
+      "contact": 9988776655,
+      "role": "user",
       "id": 5
+    },
+    {
+      "name": "milan",
+      "email": "milan",
+      "password": "m",
+      "contact": 9988776655,
+      "role": "admin",
+      "id": 6
+    },
+    {
+      "name": "hardika",
+      "email": "hardika@gmail.com",
+      "password": "1234",
+      "contact": "5678901",
+      "role": "user",
+      "id": 7
     }
   ],
   "category": [
@@ -212,21 +238,31 @@
   ],
   "carts": [
     {
-      "name": "Trimmers",
-      "price": 339,
+      "name": "pendrive",
+      "price": 296,
       "qty": 1,
-      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/trimmer/k/7/v/1-7-mm-bt1233-18-stainless-steel-cordless-philips-original-imagzgwgrdtxhgbu.jpeg?q=70",
+      "image": "https://rukminim2.flixcart.com/image/416/416/jwfa5jk0/pendrive/pendrive/z/f/p/sandisk-sdcz50-128g-i35-original-imafh3xkevktvq4w.jpeg?q=70",
       "category": "eletronics",
-      "productId": 1,
+      "productId": 4,
       "userId": 2,
-      "id": 1
+      "id": 3
+    },
+    {
+      "name": "iphone",
+      "price": 61999,
+      "qty": 1,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70",
+      "category": "mobile",
+      "productId": 5,
+      "userId": 2,
+      "id": 4
     }
   ],
   "orders": [
     {
       "name": "Trimmers",
       "price": 339,
-      "qty": 1,
+      "qty": 2,
       "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/trimmer/k/7/v/1-7-mm-bt1233-18-stainless-steel-cordless-philips-original-imagzgwgrdtxhgbu.jpeg?q=70",
       "category": "eletronics",
       "productId": 1,
@@ -234,24 +270,14 @@
       "id": 1
     },
     {
-      "name": "keyboard",
-      "price": 229,
+      "name": "mi",
+      "price": 11987,
       "qty": 1,
-      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/keyboard/desktop-keyboard/3/c/1/150-hp-original-imaghydff9ttwzex.jpeg?q=70",
-      "category": "eletronics",
-      "productId": 2,
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/e/y/b/-original-imageftfzx8gfkys.jpeg?q=70",
+      "category": "mobile",
+      "productId": 6,
       "userId": 2,
       "id": 2
-    },
-    {
-      "name": "printer",
-      "price": 10190,
-      "qty": 1,
-      "image": "https://rukminim2.flixcart.com/image/416/416/k4a7c7k0/printer/y/j/z/canon-e3370-original-imafn2wyyxjjvzd6.jpeg?q=70",
-      "category": "eletronics",
-      "productId": 3,
-      "userId": 2,
-      "id": 3
     }
   ]
 }

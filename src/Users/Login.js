@@ -24,6 +24,7 @@ const Login = () => {
             setAuth(users.data[0])
             setEmail("");
             setPassword(""); 
+            navigate('/product')
                 
        }else{
         alert("Email and Password not valid");

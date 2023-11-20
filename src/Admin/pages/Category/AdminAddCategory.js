@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import AdminNavbar from "./AdminNavbar";
-const AdminCategory = () => {
+import AdminNavbar from "../AdminNavbar";
+import AdminDashboard from "../../../components/AdminDashboard";
+import { ToastContainer } from "react-toastify";
+import { NavLink } from "react-router-dom";
+const AdminAddCategory = () => {
     const [category, setCategory] = useState("");
+    console.log(category);
     const [categoryData, setCategoryData] = useState([]);
     const [isedit, setIsEdit] = useState("");
     const handleSubmit = () => {
         if (isedit) {
             axios.put(`http://localhost:8000/category/${isedit}`, {
-                category: category
+                category_name: category
             })
                 .then((res) => {
                     alert("Category successfully Update");
@@ -21,7 +25,7 @@ const AdminCategory = () => {
                 })
         } else {
             axios.post(`http://localhost:8000/category`, {
-                category: category
+                category_name: category
             })
                 .then((res) => {
                     alert("Category successfully add");
@@ -67,53 +71,44 @@ const AdminCategory = () => {
         getUser();
     }, [])
     return (
-        <center>
-            <AdminNavbar/>
-            <h2>Admin Category page</h2>
-            <table border={1}>
-                <tbody>
-                    <tr>
-                        <td>Category :-</td>
-                        <td><input type="category" onChange={(e) => setCategory(e.target.value)} value={category} name="category" placeholder="Enter category" /></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            {
-                                isedit ? (<input type="button" onClick={() => handleSubmit()} value="Edit" />) : (<input type="button" onClick={() => handleSubmit()} value="submit" />)
-                            }
-                        </td>
-                    </tr>
-                </tbody>
-            </table><br></br>
-            <table border={1}>
-                <tbody>
-                    <tr>
-                        <td>Id</td>
-                        <td>Category</td>
-                        <td>Action</td>
-                    </tr>
-                    {
-                        categoryData.map((val) => {
-                            return (
-                                <tr key={val.id}>
-                                    <td>{val.id}</td>
-                                    <td>{val.category}</td>
-                                    <td>
+        <div className='container'>
+            <div className='row mt-5'>
+                <div className='col-lg-3'>
+                    <AdminDashboard />
+                </div>
+                <div className='col-lg-9'>
+                    <div style={{ boxShadow: '3px 3px 5px 6px #ccc' }} className="mt-3 p-5">
+                        <h4 className="text-center">Add Category</h4>
+                        <div className="row justify-content-end">
+                            <div className="col-lg-1">
+                                <NavLink to={`/admin/category`}>
+                                    <button className="d-flex btn btn-primary btn-sm">View</button>
+                                </NavLink>
+
+                            </div>
+
+                        </div>
 
 
-                                        <button onClick={() => deleteData(val.id)}>Delete</button>
-                                        <button onClick={() => editData(val.id)}>Edit</button>
-                                    </td>
+                       
+                            <div className="mb-3">
+                                <label htmlFor="exampleInputEmail1"  className="form-label" >Category</label>
+                                <input type="text" name="category" onChange={ (e) => setCategory(e.target.value) } className="form-control" value={category} id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                
+                            </div>
+                           
+            
+                            <button type="button" onClick={ () => handleSubmit() } className="btn btn-success">Submit</button>
+                       
 
-                                </tr>
-                            )
-                        })
-                    }
-                </tbody>
-            </table>
 
-        </center>
+
+
+                    </div>
+                    <ToastContainer />
+                </div>
+            </div>
+        </div>
     )
 }
-export default AdminCategory;
+export default AdminAddCategory;

@@ -6,12 +6,15 @@ const Register = () => {
     const [name,setName] = useState("");
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
+    const [contact,setContact] = useState("");
     const handleSubmit = () => {
         
         let users = axios.post(`http://localhost:8000/users`,{
             name : name,
             email : email,
-            password : password
+            password : password,
+            contact : contact,
+            role : "user"
         });
 
         if(users){
@@ -19,6 +22,7 @@ const Register = () => {
             setName("");
             setEmail("");
             setPassword("");
+            setContact("")
 
         }else{
             console.log("User not Register");
@@ -45,6 +49,10 @@ const Register = () => {
                             <div className="mb-3">
                                 <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                                 <input type="password" name='password' onChange={ (e) => setPassword(e.target.value) } value={password} className="form-control" id="exampleInputPassword1" />
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="exampleInputPassword1" className="form-label">Contact</label>
+                                <input type="number" name='contact' onChange={ (e) => setContact(e.target.value) } value={contact} className="form-control" id="exampleInputPassword1" />
                             </div>
                            
                             <button type="button" onClick={ () => handleSubmit() } className="btn btn-primary">Submit</button>

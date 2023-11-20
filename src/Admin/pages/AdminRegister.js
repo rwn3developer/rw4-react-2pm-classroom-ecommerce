@@ -16,6 +16,7 @@ const AdminRegister = () => {
                     <td>Password :- </td>
                     <td><input type="text" name="password"/></td>
                 </tr>
+                
                 <tr>
                     <td></td>
                     <td><input type="button" value="submit"/></td>

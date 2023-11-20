@@ -91,8 +91,6 @@ const Cart = () => {
                     })
             })
         }
-
-
     }
 
     const userOrder = () => {

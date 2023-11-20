@@ -10,10 +10,6 @@ const Product = () => {
   const [product, setProduct] = useState([]);
   const [category, setCategory] = useState([]);
   const [status, setStatus] = useState("");
-  const [auth, setAuth] = useAuth();
-  const [likeby, setLikeBy] = useState([]);
-  const [dislikeby, setDisLikeBy] = useState([]);
-  const [likecnt, setLikeCnt] = useState();
 
   //pagination start
   const [currentPage, setCurrentPage] = useState(1);
@@ -30,17 +26,10 @@ const Product = () => {
   const [searchproduct, setSearchProduct] = useState("")
   //search product end
 
-
-
-
-
-
   const allProduct = () => {
     axios.get(`http://localhost:8000/products?status=instock`)
       .then((res) => {
-
         setProduct(res.data)
-
       }).catch((err) => {
         console.log(err);
         return false;
@@ -70,13 +59,7 @@ const Product = () => {
     }
   }
 
-  const productLike = (id) => {
 
-  }
-
-  const productDisLike = (id) => {
-
-  }
   //pagination next previous page
   const goToNextPage = () => {
     if (currentPage !== nPages)
@@ -107,14 +90,14 @@ const Product = () => {
       .catch((err) => {
         console.log(err);
         return false
-      })
+      }) 
   }, [status])
 
   useEffect(() => {
     setProduct(currentRecords);
     allProduct();
     allCategory();
-  }, [])
+  }, []) 
 
   return (
     <>
@@ -195,12 +178,6 @@ const Product = () => {
                           <h6 className='p-0 m-0'>VIEW MORE</h6>
                         </Link>
                       </div>
-                      {/* <div className='mt-3'>
-                            <button onClick={() => productLike(val.id)} className='btn btn-success w-100'>Like</button>
-                          </div>
-                          <div className='mt-3'>
-                            <button onClick={() => productDisLike(val.id)} className='btn btn-danger w-100'>Dislike}</button>
-                          </div> */}
                     </div>
                   </div>
                 )

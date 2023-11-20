@@ -3,9 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import checkUserLogin from './Userauth';
 const ProductDetails = () => {
-
     const navigate = useNavigate();
-
     const { productId } = useParams();
     const [product, setProduct] = useState({});
 
@@ -63,12 +61,6 @@ const ProductDetails = () => {
                     return false;
                 })
         }
-
-
-
-
-
-
     }
 
     useEffect(() => {

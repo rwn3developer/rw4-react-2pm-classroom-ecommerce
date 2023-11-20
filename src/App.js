@@ -11,8 +11,10 @@ import AdminRegister from './Admin/pages/AdminRegister';
 import AdminLayout from './Admin/component/AdminLayout';
 import AdminDashboard from './Admin/pages/AdminDashboard';
 import AdminProduct from './Admin/pages/AdminProduct';
-import AdminCategory from './Admin/pages/AdminCategory';
+import AdminCategory from './Admin/pages/Category/AdminCategory';
 import AdminViewProduct from './Admin/pages/AdminViewProduct';
+import AdminAddCategory from './Admin/pages/Category/AdminAddCategory';
+import AdminEditCategory from './Admin/pages/Category/AdminEditCategory';
 
 
 import Layout from './components/Layout';
@@ -23,6 +25,10 @@ import Register from './Users/Register';
 import Cart from './Users/Cart';
 import { User } from './Admin/pages/User';
 import UserDetails from './Admin/pages/UserDetails';
+import Dashboard from './Users/Dashboard';
+import DashboardCart from './Users/DashboardCart';
+import DashboardOrder from './Users/DashboardOrder';
+import DashboardProfile from './Users/DashboardProfile';
 
 function App() {
   return (
@@ -36,24 +42,41 @@ function App() {
                     <Route path='/cart' element={<Cart/>}></Route>
 
 
+                    <Route path='/dashboard' element={<Dashboard/>}></Route>
+                    <Route path='/dashboard-cart' element={<DashboardCart/>}></Route>
+                    <Route path='/dashboard-order' element={<DashboardOrder/>}></Route>
+                    <Route path='/dashboard-profile' element={<DashboardProfile/>}></Route>
+
+
+
+
                     <Route path='/login' element={<Login/>}></Route>
                     <Route path='/register' element={<Register/>}></Route>
+
+                    {/* Admin route */}
+                    <Route path='/admin/user' element={<User/>}></Route>
+                    <Route path='/admin/category' element={<AdminCategory/>}></Route>
+                    <Route path='/admin/addcategory' element={<AdminAddCategory/>}></Route>
+                    <Route path='/admin/editcategory/:id' element={<AdminEditCategory/>}></Route>
+                    
+
+
 
 
                 </Route>
 
 
                 {/* Admin route */}
-                    <Route path='/admin' element={<AdminLayout/>}>
+                    {/* <Route path='/admin' element={<AdminLayout/>}> */}
                               <Route path='/admin' element={<AdminLogin/>}></Route>
                               <Route path='/admin/register' element={<AdminRegister/>}></Route>
                               <Route path='/admin/dashboard' element={<AdminDashboard/>}></Route>
-                              <Route path='/admin/category' element={<AdminCategory/>}></Route>
+                              
                               <Route path='/admin/product' element={<AdminProduct/>}></Route>
                               <Route path='/admin/viewproduct' element={<AdminViewProduct/>}></Route>
-                              <Route path='/admin/user' element={<User/>}></Route>
+                              
                               <Route path='/admin/userdetail/:userid' element={<UserDetails/>}></Route>
-                    </Route>
+                    {/* </Route> */}
                         
 
                 
