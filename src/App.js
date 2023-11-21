@@ -10,7 +10,7 @@ import AdminLogin from './Admin/pages/AdminLogin';
 import AdminRegister from './Admin/pages/AdminRegister';
 import AdminLayout from './Admin/component/AdminLayout';
 import AdminDashboard from './Admin/pages/AdminDashboard';
-import AdminProduct from './Admin/pages/AdminProduct';
+
 import AdminCategory from './Admin/pages/Category/AdminCategory';
 import AdminViewProduct from './Admin/pages/AdminViewProduct';
 import AdminAddCategory from './Admin/pages/Category/AdminAddCategory';
@@ -18,6 +18,8 @@ import AdminEditCategory from './Admin/pages/Category/AdminEditCategory';
 import Slider from './Admin/pages/Slider/AdminSlider';
 import AdminAddSlider from './Admin/pages/Slider/AdminAddSlider';
 import AdminEditSlider from './Admin/pages/Slider/AdminEditSlider';
+import AdminProduct from './Admin/pages/Product/AdminProduct';
+import AdminAddProduct from './Admin/pages/Product/AdminAddProduct';
 
 
 import Layout from './components/Layout';
@@ -65,6 +67,9 @@ function App() {
                     <Route path='/admin/slider' element={<Slider/>}></Route>
                     <Route path='/admin/addslider' element={<AdminAddSlider/>}></Route>
                     <Route path='/admin/editslider/:id' element={<AdminEditSlider/>}></Route>
+                    <Route path='/admin/product' element={<AdminProduct/>}></Route>
+                    <Route path='/admin/addproduct' element={<AdminAddProduct/>}></Route>
+
 
 
                     

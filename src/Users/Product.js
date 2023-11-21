@@ -7,6 +7,7 @@ import { useAuth } from '../context/Auth';
 
 const Product = () => {
 
+
   const [product, setProduct] = useState([]);
   const [category, setCategory] = useState([]);
   const [status, setStatus] = useState("");

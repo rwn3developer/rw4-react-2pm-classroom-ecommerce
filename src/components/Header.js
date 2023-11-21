@@ -49,10 +49,10 @@ const Header = () => {
                                                     (
                                                         <div>
                                                             <div className="dropdown mt-2">
-                                                                <button className="btn btn-warning btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <button className="btn btn-info  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                                     {auth.name}
                                                                 </button>
-                                                                <ul className="dropdown-menu p-0">
+                                                                <ul className="dropdown-menu mt-2 p-0">
 
                                                                     <li className="nav-item dropdown-item p-0">
                                                                         <NavLink to={`/dashboard`} className="p-2 nav-link active  text-white" aria-current="page" >
@@ -60,7 +60,7 @@ const Header = () => {
                                                                         </NavLink>
                                                                     </li>
 
-                                                                   
+
                                                                     <li className="nav-item dropdown-item p-0">
                                                                         <NavLink className="p-2 nav-link active  text-white" aria-current="page" >
                                                                             <li><button className='btn btn-info btn-sm w-100'>Password Changed</button></li>
@@ -73,7 +73,7 @@ const Header = () => {
                                                                         </NavLink>
                                                                     </li>
 
-                                                                    
+
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -89,7 +89,7 @@ const Header = () => {
                                                                         <li><button className='btn btn-info btn-sm w-100'>Dashboard</button></li>
                                                                     </NavLink>
                                                                 </li>
-                                                                
+
                                                                 <li className="nav-item dropdown-item p-0">
                                                                     <NavLink className="p-2 nav-link active  text-white" aria-current="page" >
                                                                         <li><button className='btn btn-info btn-sm w-100'>Password Changed</button></li>
@@ -112,23 +112,31 @@ const Header = () => {
                                     )
                                     }
 
-                                    
-                                        <li className="nav-item">
-                                            <NavLink to='/' className="nav-link active  text-white" aria-current="page" >Home</NavLink>
-                                        </li>
-                                        <li className="nav-item">
-                                            <NavLink to='/product' className="nav-link text-white">Product</NavLink>
-                                        </li>
+                                    {
+                                        auth.role === "admin" ? (
+                                            ""
+                                        ) : (
+                                            <>
+                                                <li className="nav-item">
+                                                    <NavLink to='/' className="nav-link active  text-white" aria-current="page" >Home</NavLink>
+                                                </li>
+                                                <li className="nav-item">
+                                                    <NavLink to='/product' className="nav-link text-white">Product</NavLink>
+                                                </li>
 
 
 
-                                        <li className="nav-item">
-                                            <NavLink to={`/cart`} className="nav-link text-white" >Cart</NavLink>
-                                        </li>
+                                                <li className="nav-item">
+                                                    <NavLink to={`/cart`} className="nav-link text-white" >Cart</NavLink>
+                                                </li>
 
-                                        <li className="nav-item">
-                                            <NavLink className="nav-link text-white" href="#">Contact</NavLink>
-                                        </li>
+                                                <li className="nav-item">
+                                                    <NavLink className="nav-link text-white" href="#">Contact</NavLink>
+                                                </li>
+                                            </>
+                                        )
+                                    }
+
 
 
                                 </ul>
