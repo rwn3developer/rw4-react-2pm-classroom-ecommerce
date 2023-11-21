@@ -15,7 +15,7 @@ const AdminDashboard = () => {
                 <NavLink to={`/admin/category`} style={{ textDecoration: 'none' }} className="text-dark">Category</NavLink>
             </a>
             <a className="list-group-item list-group-item-action">
-                <NavLink to={`/dashboard-profile`} style={{ textDecoration: 'none' }} className="text-dark">Slider</NavLink>
+                <NavLink to={`/admin/slider`} style={{ textDecoration: 'none' }} className="text-dark">Slider</NavLink>
             </a>
             <a className="list-group-item list-group-item-action">
                 <NavLink to={`/dashboard-profile`} style={{ textDecoration: 'none' }} className="text-dark">Product</NavLink>
