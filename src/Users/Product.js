@@ -12,6 +12,7 @@ const Product = () => {
   const [category, setCategory] = useState([]);
   const [status, setStatus] = useState("");
   const [price,setPrice] = useState([]);
+  const [priceFilter,setPriceFilter] = useState([]);
 
   //pagination start
   const [currentPage, setCurrentPage] = useState(1);
@@ -69,6 +70,31 @@ const Product = () => {
       console.log(err);
       return false;
     })
+  }
+
+  const handlePriceFilter = (checked,value) => {
+
+    let start = 25000,end=60000
+    axios.get(`http://localhost:8000/products?price_gte=${start}&price_lte=${end}`)
+    .then((res) => {
+      console.log(res.data);
+      setProduct(res.data)
+    }).catch((err) => {
+      console.log(err);
+      return false;
+    })
+
+    //   let a = value.filter((v,i)=>{
+    //       return i%2==0;
+    //   })
+    //   value = a;
+    // let all = [...priceFilter];
+    // if(checked){
+    //     all.push(value);
+    // }else{
+    //   all = all.filter(val => val !== value)
+    // }
+    // setPriceFilter(all)
   }
 
 
@@ -146,6 +172,7 @@ const Product = () => {
 
             </div>
 
+                {JSON.stringify(priceFilter)}
             <div className="card mt-5" style={{ width: '16rem' }}>
               <ul className="list-group list-group-flush">
 
@@ -153,7 +180,7 @@ const Product = () => {
                   price.map((val)=>{
                       return(
                         <li className="list-group-item">
-                            <input type='checkbox'/> {val.amt}
+                            <input type='checkbox' onChange={ (e) => handlePriceFilter(e.target.checked,val.amt) }/> {val.amt}
                         </li>
                       )
                   })
