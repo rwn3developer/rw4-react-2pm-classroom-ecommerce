@@ -236,17 +236,6 @@
       "id": 4
     }
   ],
-  "carts": [
-    {
-      "name": "keyboard",
-      "price": 229,
-      "qty": 1,
-      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/keyboard/desktop-keyboard/3/c/1/150-hp-original-imaghydff9ttwzex.jpeg?q=70",
-      "category": "eletronics",
-      "productId": 2,
-      "userId": 2,
-      "id": 2
-    }
-  ],
+  "carts": [],
   "orders": []
 }

@@ -86,15 +86,20 @@ const Cart = () => {
     }
 
     const multipleDelete = () => {
-        mdelete.map((val)=>{
-            axios.delete(`http://localhost:8000/carts/${val}`).
-            then((res)=>{
-                alert("Cart successfully delete");
-            }).catch((err)=>{
-                console.log(err);
-                return false;
+        if(mdelete.length > 0){
+            mdelete.map((val)=>{
+                axios.delete(`http://localhost:8000/carts/${val}`).
+                then((res)=>{
+                    alert("Cart successfully delete");
+                }).catch((err)=>{
+                    console.log(err);
+                    return false;
+                })
             })
-        })
+        }else{
+            alert("Minimum 1 record selected");
+        }
+        
         getAllCart();
     }
 

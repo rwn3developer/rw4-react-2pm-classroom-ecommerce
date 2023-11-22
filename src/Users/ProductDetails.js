@@ -88,14 +88,18 @@ const ProductDetails = () => {
                                     <button onClick={() => Addtocart(product.id)} className='btn btn-success w-50'>Add To Cart</button>
                                 </div>
                             </div>
+                            
                         </div>
+                        
                     </div>
 
+                   
 
 
 
 
                 </div>
+                <button onClick={ () => navigate(`/product`)  } className='btn btn-warning'>Continue Shopping</button>
             </div>
         </>
     )

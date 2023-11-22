@@ -133,8 +133,8 @@ const AdminProduct = () => {
                            
                         </div>
                         <div className="mt-3 mb-3 w-50">
-                                <input type="search" onKeyUp={handleSearch} className="form-control" name="search" placeholder="Product search here"/>
-                            </div>
+                            <input type="search" onKeyUp={handleSearch} className="form-control" name="search" placeholder="Product search here"/>
+                        </div>
                         <table className="table table-hover">
                             <thead>
                                 <tr>
