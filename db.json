@@ -79,7 +79,7 @@
       "desc": "",
       "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/trimmer/k/7/v/1-7-mm-bt1233-18-stainless-steel-cordless-philips-original-imagzgwgrdtxhgbu.jpeg?q=70",
       "category": "eletronics",
-      "marketstatus": "best",
+      "marketstatus": "latest",
       "status": "instock",
       "id": 1
     },
@@ -144,7 +144,7 @@
       "qty": 1,
       "desc": "",
       "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/q/t/h/galaxy-f54-5g-sm-e546bzshins-samsung-original-imagq79f82pfyzvh.jpeg?q=70",
-      "status": "instock",
+      "status": "outstock",
       "category": "mobile",
       "marketstatus": "trending",
       "id": 7
@@ -155,7 +155,7 @@
       "qty": 1,
       "desc": "",
       "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/4/h/e/-original-imagzjhwmsamexfk.jpeg?q=70",
-      "status": "instock",
+      "status": "outstock",
       "category": "mobile",
       "marketstatus": "best",
       "id": 8
@@ -166,7 +166,7 @@
       "qty": 1,
       "desc": "",
       "image": "https://rukminim2.flixcart.com/image/416/416/ko8xtow0/monitor/t/a/y/d24-20-66aekac1in-lenovo-original-imag2qwzazcdmqtb.jpeg?q=70",
-      "status": "instock",
+      "status": "outstock",
       "category": "eletronics",
       "marketstatus": "upcomming",
       "id": 9
@@ -177,7 +177,7 @@
       "qty": 1,
       "desc": "",
       "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/b/i/x/-original-imagt4qptrkzwmxa.jpeg?q=70",
-      "status": "instock",
+      "status": "outstock",
       "category": "mobile",
       "marketstatus": "best",
       "id": 10
@@ -193,7 +193,7 @@
       "likedBy": [],
       "dislikedBy": [],
       "marketstatus": "trending",
-      "status": "instock",
+      "status": "outstock",
       "id": 11
     },
     {
@@ -207,7 +207,7 @@
       "likedBy": [],
       "dislikedBy": [],
       "marketstatus": "upcomming",
-      "status": "instock",
+      "status": "outstock",
       "id": 12
     },
     {
@@ -218,7 +218,7 @@
       "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/5/q/6/-original-imags487ftf3g2s7.jpeg?q=70",
       "category": "mobile",
       "marketstatus": "latest",
-      "status": "instock",
+      "status": "outstock",
       "id": 13
     }
   ],
@@ -238,46 +238,15 @@
   ],
   "carts": [
     {
-      "name": "pendrive",
-      "price": 296,
+      "name": "keyboard",
+      "price": 229,
       "qty": 1,
-      "image": "https://rukminim2.flixcart.com/image/416/416/jwfa5jk0/pendrive/pendrive/z/f/p/sandisk-sdcz50-128g-i35-original-imafh3xkevktvq4w.jpeg?q=70",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/keyboard/desktop-keyboard/3/c/1/150-hp-original-imaghydff9ttwzex.jpeg?q=70",
       "category": "eletronics",
-      "productId": 4,
-      "userId": 2,
-      "id": 3
-    },
-    {
-      "name": "iphone",
-      "price": 61999,
-      "qty": 1,
-      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/3/5/l/-original-imaghx9qmgqsk9s4.jpeg?q=70",
-      "category": "mobile",
-      "productId": 5,
-      "userId": 2,
-      "id": 4
-    }
-  ],
-  "orders": [
-    {
-      "name": "Trimmers",
-      "price": 339,
-      "qty": 2,
-      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/trimmer/k/7/v/1-7-mm-bt1233-18-stainless-steel-cordless-philips-original-imagzgwgrdtxhgbu.jpeg?q=70",
-      "category": "eletronics",
-      "productId": 1,
-      "userId": 2,
-      "id": 1
-    },
-    {
-      "name": "mi",
-      "price": 11987,
-      "qty": 1,
-      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/mobile/e/y/b/-original-imageftfzx8gfkys.jpeg?q=70",
-      "category": "mobile",
-      "productId": 6,
+      "productId": 2,
       "userId": 2,
       "id": 2
     }
-  ]
+  ],
+  "orders": []
 }
