@@ -11,6 +11,7 @@ const Product = () => {
   const [product, setProduct] = useState([]);
   const [category, setCategory] = useState([]);
   const [status, setStatus] = useState("");
+  const [price,setPrice] = useState([]);
 
   //pagination start
   const [currentPage, setCurrentPage] = useState(1);
@@ -60,6 +61,16 @@ const Product = () => {
     }
   }
 
+  const AllPrice = () => {
+    axios.get(`http://localhost:8000/price`)
+    .then((res) => {
+      setPrice(res.data)
+    }).catch((err) => {
+      console.log(err);
+      return false;
+    })
+  }
+
 
   //pagination next previous page
   const goToNextPage = () => {
@@ -91,14 +102,15 @@ const Product = () => {
       .catch((err) => {
         console.log(err);
         return false
-      }) 
+      })
   }, [status])
 
   useEffect(() => {
     setProduct(currentRecords);
     allProduct();
     allCategory();
-  }, []) 
+    AllPrice();
+  }, [])
 
   return (
     <>
@@ -107,7 +119,7 @@ const Product = () => {
 
 
 
-        <div className="row p-5" style={{boxShadow : '1px 1px 5px 2px gray'}}>
+        <div className="row p-5" style={{ boxShadow: '1px 1px 5px 2px gray' }}>
 
           <div className='col-lg-3'>
             <h5>Category Filter</h5>
@@ -132,6 +144,22 @@ const Product = () => {
                 </li>
               </ul>
 
+            </div>
+
+            <div className="card mt-5" style={{ width: '16rem' }}>
+              <ul className="list-group list-group-flush">
+
+                 {
+                  price.map((val)=>{
+                      return(
+                        <li className="list-group-item">
+                            <input type='checkbox'/> {val.amt}
+                        </li>
+                      )
+                  })
+                 }
+
+              </ul>
             </div>
 
           </div>
@@ -167,7 +195,7 @@ const Product = () => {
               currentRecords.map((val) => {
                 return (
                   <div className="col-lg-4 pb-3">
-                    <div className="card" style={{padding: '15px' }}>
+                    <div className="card" style={{ padding: '15px' }}>
                       <img style={{ height: '200px', objectFit: 'contain' }} src={val.image} className="card-img-top" alt="..." />
                       <div className="card-body">
                         <h5 className="card-title">Name :- {val.name}</h5>
